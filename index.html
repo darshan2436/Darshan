@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Darshan Thapa Magar — Full Stack Developer</title>
+<meta name="description" content="Portfolio of Darshan Thapa Magar, Software Engineering student at NCIT and full-stack developer from Syangja, Nepal.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="https://kit.fontawesome.com/8c0864c867.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="progress-bar" id="progressBar"></div>
+<div class="bg-orbs"><span></span><span></span><span></span></div>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#home" class="logo">D<span>T</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a data-link href="#about">About</a>
+      <a data-link href="#skills">Skills</a>
+      <a data-link href="#education">Education</a>
+      <a data-link href="#experience">Experience</a>
+      <a data-link href="#projects">Projects</a>
+      <a data-link href="#contact">Contact</a>
+    </nav>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle color theme">
+        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.4M12 19.6V22M4.9 4.9l1.7 1.7M17.4 17.4l1.7 1.7M2 12h2.4M19.6 12H22M4.9 19.1l1.7-1.7M17.4 6.6l1.7-1.7"/></svg>
+        <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.8 6.8 0 0 0 10.5 10.5Z"/></svg>
+      </button>
+      <button class="burger" id="burger" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="scrim" id="scrim"></div>
+<div class="mobile-panel" id="mobilePanel">
+  <a data-link href="#about">About</a>
+  <a data-link href="#skills">Skills</a>
+  <a data-link href="#education">Education</a>
+  <a data-link href="#experience">Experience</a>
+  <a data-link href="#projects">Projects</a>
+  <a data-link href="#contact">Contact</a>
+</div>
+
+<main>
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-eyebrow"><span class="pulse-dot"></span> Open to new opportunities</div>
+    <h1 data-reveal>Hi, I'm Darshan<br><span class="grad">Thapa Magar</span></h1>
+    <p class="role" data-reveal style="--d:.1">Software Engineering Student | Full Stack Developer</p>
+    <p class="loc" data-reveal style="--d:.18">Syangja, Nepal • NCIT</p>
+    <div class="hero-cta" data-reveal style="--d:.26">
+      <a href="#contact" class="btn btn-primary">Get In Touch</a>
+      <!-- <button class="btn btn-outline" id="resumeBtn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v13m0 0-4.5-4.5M12 16l4.5-4.5"/><path d="M4 18v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
+        Download Resume
+      </button> -->
+    </div>
+    <div class="hero-social" data-reveal style="--d:.34">
+      <a class="social-badge" href="https://github.com/darshan2436" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github" style="font-size:x-large;"></i></a>
+      <a class="social-badge" href="https://www.linkedin.com/in/darshan-thapa-magar-65218a302/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin" style="font-size:x-large;"></i></a>
+      <a class="social-badge" href="https://facebook.com/drsn.t.mgr" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook" style="font-size:x-large;"></i></a>
+      <a class="social-badge" href="https://x.com/darshant2436" target="_blank" rel="noopener" aria-label="X / Twitter"><i class="fa-brands fa-x-twitter" style="font-size:x-large;"></i></a>
+    </div>
+    <div class="scroll-hint chevron-bounce">
+      <a href="#about"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><polyline points="6 9 12 15 18 9"/></svg></a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow-label">Introduction</span>
+        <h2>About Me</h2>
+        <div class="bar"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-text" data-reveal>
+          <p>I'm <strong>Darshan Thapa Magar</strong>, a passionate software engineering student at NCIT from Syangja, Nepal. I specialize in building exceptional digital experiences with a focus on full-stack development.</p>
+          <p>With a strong foundation in modern web technologies and a keen eye for design, I transform ideas into polished, functional applications. My journey in tech is driven by curiosity, creativity, and a commitment to continuous improvement.</p>
+        </div>
+        <div class="traits">
+          <div class="trait-card" data-reveal style="--d:.05">
+            <span class="trait-num">01</span>
+            <div class="trait-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 8 4 12 9 16"/><polyline points="15 8 20 12 15 16"/></svg></div>
+            <h3>Clean Code Advocate</h3>
+            <p>Writing maintainable, scalable, and elegant solutions that stand the test of time.</p>
+          </div>
+          <div class="trait-card" data-reveal style="--d:.1">
+            <span class="trait-num">02</span>
+            <div class="trait-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="10" r="5.2"/><path d="M9.5 18h5M10.2 21h3.6"/></svg></div>
+            <h3>Problem Solver</h3>
+            <p>Passionate about tackling complex challenges with innovative and efficient approaches.</p>
+          </div>
+          <div class="trait-card" data-reveal style="--d:.15">
+            <span class="trait-num">03</span>
+            <div class="trait-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="8.5" cy="8.5" r="3.2"/><path d="M2.5 19c0-3.3 2.7-5.5 6-5.5s6 2.2 6 5.5"/><circle cx="17" cy="9" r="2.6"/><path d="M15.7 13.6c2.6.3 4.3 2.2 4.3 5.1"/></svg></div>
+            <h3>Collaborative Spirit</h3>
+            <p>Thriving in team environments, contributing to open-source, and sharing knowledge.</p>
+          </div>
+          <div class="trait-card" data-reveal style="--d:.2">
+            <span class="trait-num">04</span>
+            <div class="trait-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c2 3 3 6 3 9a3 3 0 0 1-6 0c0-3 1-6 3-9Z"/><path d="M9.2 15 6 21l3.5-1.4M14.8 15 18 21l-3.5-1.4"/></svg></div>
+            <h3>Continuous Learner</h3>
+            <p>Always exploring new technologies and staying ahead in the ever-evolving tech landscape.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section alt">
+    <div class="wrap">
+      <div class="section-head center" data-reveal>
+        <span class="eyebrow-label">What I work with</span>
+        <h2>Skills &amp; Expertise</h2>
+        <div class="bar"></div>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card" data-reveal style="--d:.02">
+          <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 8 4 12 9 16"/><polyline points="15 8 20 12 15 16"/></svg></div>
+          <h3>Frontend</h3>
+          <div class="pill-row">
+            <span class="pill">HTML5</span><span class="pill">CSS3</span><span class="pill">JavaScript</span><span class="pill">React</span><span class="pill">Tailwind CSS</span>
+          </div>
+        </div>
+        <div class="skill-card featured" data-reveal style="--d:.06">
+          <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="6" rx="1.5"/><rect x="3" y="14" width="18" height="6" rx="1.5"/><circle cx="7" cy="7" r=".6" fill="currentColor"/><circle cx="7" cy="17" r=".6" fill="currentColor"/></svg></div>
+          <h3>Backend</h3>
+          <div class="pill-row">
+            <span class="pill">Node.js</span><span class="pill">Express</span><span class="pill">FastAPI</span><span class="pill">JavaScript</span><span class="pill">REST APIs</span>
+          </div>
+        </div>
+        <div class="skill-card" data-reveal style="--d:.1">
+          <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5.5" rx="7.5" ry="2.8"/><path d="M4.5 5.5v13c0 1.5 3.4 2.8 7.5 2.8s7.5-1.3 7.5-2.8v-13"/><path d="M4.5 12c0 1.5 3.4 2.8 7.5 2.8s7.5-1.3 7.5-2.8"/></svg></div>
+          <h3>Database</h3>
+          <div class="pill-row">
+            <span class="pill">MongoDB</span><span class="pill">MySQL</span><span class="pill">PostgreSQL</span>
+          </div>
+        </div>
+        <div class="skill-card" data-reveal style="--d:.02">
+          <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 3v2.2M12 18.8V21M21 12h-2.2M5.2 12H3M18 6l-1.5 1.5M7.5 16.5 6 18M18 18l-1.5-1.5M7.5 7.5 6 6"/></svg></div>
+          <h3>Tools &amp; Workflow</h3>
+          <div class="pill-row">
+            <span class="pill">Git</span><span class="pill">GitHub</span><span class="pill">VS Code</span><span class="pill">Postman</span><span class="pill">Docker</span>
+          </div>
+        </div>
+        <div class="skill-card" data-reveal style="--d:.06">
+          <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="9" x2="9" y2="20"/></svg></div>
+          <h3>Design</h3>
+          <div class="pill-row">
+            <span class="pill">Responsive Design</span><span class="pill">UI/UX Principles</span>
+          </div>
+        </div>
+        <div class="skill-card" data-reveal style="--d:.1">
+          <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><line x1="3" y1="12" x2="21" y2="12"/></svg></div>
+          <h3>Languages</h3>
+          <div class="pill-row">
+            <span class="pill">C++</span><span class="pill">Python</span><span class="pill">JavaScript</span><span class="pill">TypeScript</span>
+          </div>
+        </div>
+      </div>
+      <div class="marquee" data-reveal>
+        <div class="marquee-track" id="marqueeTrack">
+          <span>Node.js</span><span>MongoDB</span><span>JavaScript</span><span>Python</span><span>FastAPI</span><span>HTML5</span><span>CSS3</span><span>React</span>
+          <span>Node.js</span><span>MongoDB</span><span>JavaScript</span><span>Python</span><span>FastAPI</span><span>HTML5</span><span>CSS3</span><span>React</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow-label">Academics</span>
+        <h2>Education</h2>
+        <div class="bar"></div>
+      </div>
+      <div class="timeline">
+        <div class="tl-item" data-reveal>
+          <div class="tl-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m2 9 10-5 10 5-10 5-10-5Z"/><path d="M6 11v5c0 1.4 2.7 2.5 6 2.5s6-1.1 6-2.5v-5"/></svg></div>
+          <div class="tl-card">
+            <span class="tl-date"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="4.5" width="17" height="16" rx="2"/><line x1="3.5" y1="9.5" x2="20.5" y2="9.5"/><line x1="8" y1="2.5" x2="8" y2="6.5"/><line x1="16" y1="2.5" x2="16" y2="6.5"/></svg> 2023 — Present</span>
+            <h3>Bachelor in Software Engineering</h3>
+            <span class="tl-org">Nepal College of Information Technology (NCIT)</span>
+            <span class="tl-place">Lalitpur, Nepal</span>
+            <p>Currently pursuing a comprehensive program in software engineering, focusing on full-stack development, algorithms, and modern software practices.</p>
+            <div class="tl-tags">
+              <span class="pill">Software Development</span><span class="pill">Data Structures &amp; Algorithms</span><span class="pill">Web Technologies</span><span class="pill">Database Management</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section alt">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow-label">Where I've contributed</span>
+        <h2>Experience</h2>
+        <div class="bar"></div>
+      </div>
+      <div class="timeline">
+        <div class="tl-item" data-reveal>
+          <div class="tl-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 18l6-6-6-6"></path>
+<path d="M8 6l-6 6 6 6"></path></svg></div>
+          <div class="tl-card">
+            <span class="tl-date"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="4.5" width="17" height="16" rx="2"/><line x1="3.5" y1="9.5" x2="20.5" y2="9.5"/><line x1="8" y1="2.5" x2="8" y2="6.5"/><line x1="16" y1="2.5" x2="16" y2="6.5"/></svg> Coding Competition</span>
+            <h3>Revah-Coding Competition</h3>
+            <span class="tl-org">Winner</span>
+            <span class="tl-place">Nepal College of Information Technology</span>
+            <p>Discovered that programming goes beyond syntax-it is about logical thinking, structured problem-solving, developing unique approaches to challenges, and building confidence by solving complex problems under pressure.</p>
+            <div class="tl-tags">
+              <span class="pill">Problem-Solving</span><span class="pill">Algorithm Design</span><span class="pill">Python</span>
+            </div>
+          </div>
+        </div>
+        <div class="tl-item" data-reveal>
+          <div class="tl-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5 3 21l4.5-1.5M16 4a4 4 0 0 1 4 4c0 4-8 11-8 11s-1.4-1.2-3-3"/><path d="m14.5 5.5 4 4L10 18l-4-4Z"/></svg></div>
+          <div class="tl-card">
+            <span class="tl-date"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="4.5" width="17" height="16" rx="2"/><line x1="3.5" y1="9.5" x2="20.5" y2="9.5"/><line x1="8" y1="2.5" x2="8" y2="6.5"/><line x1="16" y1="2.5" x2="16" y2="6.5"/></svg> Hackathon</span>
+            <h3>Noskathon‑Lite Hackathon</h3>
+            <span class="tl-org">Team Error_404</span>
+            <span class="tl-place">Nepal</span>
+            <p>Collaborated under time pressure to design and ship a working prototype, integrating a React frontend with third-party APIs to solve a real-world problem statement.</p>
+            <div class="tl-tags">
+              <span class="pill">React</span><span class="pill">Teamwork</span><span class="pill">Rapid Prototyping</span>
+            </div>
+          </div>
+        </div>
+        <div class="tl-item" data-reveal>
+          <div class="tl-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5.5A1.5 1.5 0 0 1 9.5 4h5A1.5 1.5 0 0 1 16 5.5V7"/><line x1="3" y1="12.5" x2="21" y2="12.5"/></svg></div>
+          <div class="tl-card">
+            <span class="tl-date"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="4.5" width="17" height="16" rx="2"/><line x1="3.5" y1="9.5" x2="20.5" y2="9.5"/><line x1="8" y1="2.5" x2="8" y2="6.5"/><line x1="16" y1="2.5" x2="16" y2="6.5"/></svg> 2024 — Present</span>
+            <h3>Open Source Contributor</h3>
+            <span class="tl-org">GitHub</span>
+            <span class="tl-place">Remote</span>
+            <p>Actively contributing to open-source projects and building personal repositories spanning full-stack web apps, browser extensions, and backend services — earning a Pull Shark achievement along the way.</p>
+            <div class="tl-tags">
+              <span class="pill">Git Workflow</span><span class="pill">Code Review</span><span class="pill">Collaboration</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="wrap">
+      <div class="section-head center" data-reveal>
+        <span class="eyebrow-label">Selected work</span>
+        <h2>Projects</h2>
+        <div class="bar"></div>
+        <p>Explore my portfolio of projects ranging from full-stack applications to developer tools and daily coding practice.</p>
+      </div>
+
+      <div class="filter-row" data-reveal>
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="web">Web Apps</button>
+        <button class="filter-btn" data-filter="backend">Backend</button>
+        <button class="filter-btn" data-filter="tools">Tools</button>
+        <button class="filter-btn" data-filter="learning">Learning</button>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+
+        <div class="project-card" data-category="web" data-reveal>
+          <div class="project-thumb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18c-4.5 1.5-4.5-2.5-6-3m12 5v-3.4c0-.9.3-1.5.7-1.8-2.4-.3-4.9-1.2-4.9-5.4 0-1.2.4-2.2 1.2-3-.1-.3-.5-1.4.1-2.9 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.5.2 2.6.1 2.9.8.8 1.2 1.8 1.2 3 0 4.2-2.6 5.1-5 5.4.4.3.7 1 .7 2v3"/></svg></div>
+          <div class="project-body">
+            <h3><a href="https://dirghaayu.vercel.app/" target="_blank" rel="noopener">dirghaayu</a></h3>
+            <p>A healthcare-focused application designed to improve medical service accessibility and patient management.</p>
+            <div class="project-tags"><span class="pill">JavaScript</span><span class="pill">Node.js</span><span class="pill">MongoDB</span></div>
+            <a class="project-link" href="https://github.com/darshan2436/dirghaayu" target="_blank" rel="noopener">
+              View on GitHub
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="web" data-reveal style="--d:.05">
+          <div class="project-thumb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18c-4.5 1.5-4.5-2.5-6-3m12 5v-3.4c0-.9.3-1.5.7-1.8-2.4-.3-4.9-1.2-4.9-5.4 0-1.2.4-2.2 1.2-3-.1-.3-.5-1.4.1-2.9 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.5.2 2.6.1 2.9.8.8 1.2 1.8 1.2 3 0 4.2-2.6 5.1-5 5.4.4.3.7 1 .7 2v3"/></svg></div>
+          <div class="project-body">
+            <h3>Error_404</h3>
+            <p>Hackathon project developed collaboratively during Noskathon-Lite, showcasing innovative problem-solving under time pressure.</p>
+            <div class="project-tags"><span class="pill">JavaScript</span><span class="pill">React</span><span class="pill">API Integration</span></div>
+            <a class="project-link" href="https://github.com/Noskathon-Lite/Error_404" target="_blank" rel="noopener">
+              View on GitHub
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="backend" data-reveal style="--d:.1">
+          <div class="project-thumb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18c-4.5 1.5-4.5-2.5-6-3m12 5v-3.4c0-.9.3-1.5.7-1.8-2.4-.3-4.9-1.2-4.9-5.4 0-1.2.4-2.2 1.2-3-.1-.3-.5-1.4.1-2.9 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.5.2 2.6.1 2.9.8.8 1.2 1.8 1.2 3 0 4.2-2.6 5.1-5 5.4.4.3.7 1 .7 2v3"/></svg></div>
+          <div class="project-body">
+            <h3>RoodoBackend</h3>
+            <p>Robust backend service with scalable architecture and efficient API endpoints, built for reliability.</p>
+            <div class="project-tags"><span class="pill">Node.js</span><span class="pill">Express</span><span class="pill">REST API</span></div>
+            <a class="project-link" href="https://github.com/darshan2436/RoodoBackend" target="_blank" rel="noopener">
+              View on GitHub
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="tools" data-reveal>
+          <div class="project-thumb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18c-4.5 1.5-4.5-2.5-6-3m12 5v-3.4c0-.9.3-1.5.7-1.8-2.4-.3-4.9-1.2-4.9-5.4 0-1.2.4-2.2 1.2-3-.1-.3-.5-1.4.1-2.9 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.5.2 2.6.1 2.9.8.8 1.2 1.8 1.2 3 0 4.2-2.6 5.1-5 5.4.4.3.7 1 .7 2v3"/></svg></div>
+          <div class="project-body">
+            <h3>Autoplay-shorts-Extension</h3>
+            <p>A lightweight browser extension that automatically continues playing YouTube Shorts for uninterrupted viewing.</p>
+            <div class="project-tags"><span class="pill">JavaScript</span><span class="pill">Chrome Extension</span></div>
+            <a class="project-link" href="https://github.com/darshan2436/Autoplay-shorts-Extension" target="_blank" rel="noopener">
+              View on GitHub
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="learning" data-reveal style="--d:.05">
+          <div class="project-thumb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18c-4.5 1.5-4.5-2.5-6-3m12 5v-3.4c0-.9.3-1.5.7-1.8-2.4-.3-4.9-1.2-4.9-5.4 0-1.2.4-2.2 1.2-3-.1-.3-.5-1.4.1-2.9 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.5.2 2.6.1 2.9.8.8 1.2 1.8 1.2 3 0 4.2-2.6 5.1-5 5.4.4.3.7 1 .7 2v3"/></svg></div>
+          <div class="project-body">
+            <h3><a href="https://30-days-of-js-nine.vercel.app/" target="_blank" rel="noopener">30-days-of-js</a></h3>
+            <p>A daily challenge series solving JavaScript fundamentals, one problem at a time, to sharpen algorithmic thinking.</p>
+            <div class="project-tags"><span class="pill">JavaScript</span><span class="pill">DSA</span></div>
+            <a class="project-link" href="https://github.com/darshan2436/30-days-of-js" target="_blank" rel="noopener">
+              View on GitHub
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="web" data-reveal style="--d:.1">
+          <div class="project-thumb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><circle cx="6.5" cy="6.5" r=".6" fill="currentColor"/></svg></div>
+          <div class="project-body">
+            <h3>More on GitHub</h3>
+            <p>This is a snapshot — explore the full collection of repositories, experiments, and contributions on my profile.</p>
+            <div class="project-tags"><span class="pill">20+ repositories</span></div>
+            <a class="project-link" href="https://github.com/darshan2436?tab=repositories" target="_blank" rel="noopener">
+              View all repositories
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section alt">
+    <div class="wrap">
+      <div class="section-head center" data-reveal>
+        <span class="eyebrow-label">Let's talk</span>
+        <h2>Get In Touch</h2>
+        <div class="bar"></div>
+        <p>Have a project in mind or want to collaborate? Feel free to reach out. I'm always open to discussing new opportunities.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-left" data-reveal>
+          <h3>Let's Work Together</h3>
+          <p>I'm currently looking for new opportunities and collaborations. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+
+          <div class="info-card">
+            <div class="info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m8 12 3 3 5-6"/><circle cx="12" cy="12" r="9"/></svg></div>
+            <div><div class="label">GitHub</div><a class="value" href="https://github.com/darshan2436" target="_blank" rel="noopener">github.com/darshan2436</a></div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.1-7-11.5A7 7 0 0 1 19 9.5C19 14.9 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.4"/></svg></div>
+            <div><div class="label">Location</div><div class="value">Syangja, Nepal</div></div>
+          </div>
+
+          <div class="follow-card">
+            <h4>Follow My Journey</h4>
+            <p>Stay updated with my latest projects and tech explorations.</p>
+            <div class="follow-links">
+              <a href="https://github.com/darshan2436" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github" style="font-size:x-large;"></i></a>
+              <a href="https://www.linkedin.com/in/darshan-thapa-magar-65218a302/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"  style="font-size:x-large;"></i></a>
+              <a href="https://facebook.com/drsn.t.mgr" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook" style="font-size:x-large;"></i></a>
+              <a href="https://x.com/darshant2436" target="_blank" rel="noopener" aria-label="X"><i class="fa-brands fa-x-twitter" style="font-size:x-large;"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <form action="https://formspree.io/f/meeyrblo" method="post" class="contact-form" id="contactForm" data-reveal style="--d:.1">
+          <div class="form-row">
+            <label for="name">Your Name</label>
+            <input id="name" name="name" type="text" placeholder="John Doe" required>
+          </div>
+          <div class="form-row">
+            <label for="email">Your Email</label>
+            <input id="email" name="email" type="email" placeholder="john@example.com" required>
+          </div>
+          <div class="form-row">
+            <label for="subject">Subject</label>
+            <input id="subject" name="subject" type="text" placeholder="Project Collaboration">
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="submit-btn" id="submitBtn">
+            <span id="submitLabel">Send Message</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          </button>
+          <p class="form-msg" id="formMsg"></p>
+          <p class="form-note">Your information is safe and will never be shared.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap footer-inner">
+    <a href="#home" class="logo">D<span>T</span></a>
+    <p id="footerText">© <span id="year"></span> Darshan Thapa Magar. Designed &amp; built with care.</p>
+  </div>
+</footer>
+
+<button class="back-top" id="backTop" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+</button>
+
+<div id="toast" style="position:fixed;bottom:32px;left:50%;transform:translate(-50%,20px);background:var(--surface);border:1px solid var(--border-strong);color:var(--text-1);padding:14px 22px;border-radius:12px;font-size:.9rem;opacity:0;pointer-events:none;transition:all .4s cubic-bezier(.16,1,.3,1);z-index:2000;box-shadow:var(--shadow-lg);"></div>
+<script src="scripts.js"></script>
+</body>
+</html>
